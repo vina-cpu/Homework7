@@ -22,18 +22,22 @@ def configure_logging():
         datefmt="%m-%d-%Y %H:%M:%S",
         handlers=[logging.StreamHandler(sys.stdout)]
     )
+    logging.info("Logging configured")
 
 def configure_parser():
     #just separating the parser from the main b/c it was getting crowded in there
     parser = argparse.ArgumentParser(description = 'Provide a url to make a QR code')
     parser.add_argument('--url', help = 'The URL to make the QR code with', default = URL)
+    logging.info('Parser configured')
     return parser
 
 def make_file_path():
     time = datetime.now().strftime("%m.%d.%H.%M")
+    logging.info("File path made")
     return Path.cwd() / QR_DIR / f"qr_code_{time}.png"
 
 def make_directory():
+    logging.info("Directory made or checked")
     os.makedirs(QR_DIR, exist_ok = True)
 
 def check_url(url):
@@ -59,7 +63,6 @@ def main():
     filepath = make_file_path()
     make_directory()
     make_qr(args.url, filepath, FILL, BACK)
-    
 
 if __name__ == "__main__":
     main()
