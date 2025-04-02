@@ -23,5 +23,6 @@ def make_qr(url, path):
         with path.open('wb') as my_qr_image:
             image.save(my_qr_image)
         logging.info("QR code made")
+        logging.info(f"QR code saved to {path.parent.name}/{path.stem}")
     except Exception as e:
         logging.error(f"An error occured. Could not generate or save the qr code: {e}")
