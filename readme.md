@@ -14,8 +14,11 @@ docker run -v $(pwd):/mydirectory qr-gen-app
 
 # Description
 main.py - where I am running everything cohesively
+
 configure - where all my configuring stuff is, so logging, configuring the parser, and making a directory and a file path to a directory in my environment variables
+
 generate_qr_code - actually generating the qr code and saving it
+
 submission_images - just where I am storing the images below
 
 # Screens
