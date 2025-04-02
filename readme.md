@@ -26,7 +26,7 @@ submission_images - just where I am storing the images below
 ![alt text](submission_images/image-2.png)
 ![alt text](submission_images/image-3.png)
 ![alt text](submission_images/image-4.png)
-![alt text](submission_images/qr_code_04.02.02.44.png)
+![alt text](submission_images/qr_code_04.02.03.32.png)
 
 Note: Although I saved the qr codes to a separate folder, I included the specific one I made from this build here.
 Also, as you can tell, I modified my specific environment variables locally so the qr code would be magenta.
