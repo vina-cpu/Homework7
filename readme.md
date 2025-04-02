@@ -22,7 +22,7 @@ generate_qr_code - actually generating the qr code and saving it
 submission_images - just where I am storing the images below
 
 # Screens
-![alt text](submission_images/image.png)
+![alt text](submission_images/image-1.png)
 ![alt text](submission_images/image-2.png)
 ![alt text](submission_images/image-3.png)
 ![alt text](submission_images/image-4.png)
