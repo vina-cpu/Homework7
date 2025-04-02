@@ -15,7 +15,7 @@ def check_url(url):
 def make_qr(url, path):    
     try:
         check_url(url)
-        making_qr = qrcode.QRCode(version = 1, box_size = 10, border = 3)
+        making_qr = qrcode.QRCode(version = None, box_size = 6, border = 4)
         making_qr.add_data(url)
         making_qr.make(fit = True)
         image = making_qr.make_image(fill_color = FILL, back_color = BACK)
