@@ -23,7 +23,7 @@ submission_images - just where I am storing the images below
 
 # Screens
 ![alt text](submission_images/image-1.png)
-![alt text](submission_images/image-2.png)
+![alt text](submission_images/image-22.png)
 ![alt text](submission_images/image-3.png)
 ![alt text](submission_images/image-4.png)
 ![alt text](submission_images/qr_code_04.02.03.32.png)
