@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  qr_code_container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - QR_DIR=/mydirectory/qrcodes
+      - FILL_COLOR=white
+      - BACK_COLOR=black
+    volumes:
+      - ./qrcodes:/mydirectory/qrcodes # this maps my directory locally to the directory in the container
+    command: --url https://github.com/vina-cpu/Homework7
