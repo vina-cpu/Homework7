@@ -12,6 +12,12 @@ docker build -t qr-gen-app .
 
 docker run -v $(pwd):/mydirectory qr-gen-app
 
+# Description
+main.py - where I am running everything cohesively
+configure - where all my configuring stuff is, so logging, configuring the parser, and making a directory and a file path to a directory in my environment variables
+generate_qr_code - actually generating the qr code and saving it
+submission_images - just where I am storing the images below
+
 # Screens
 ![alt text](submission_images/image.png)
 ![alt text](submission_images/image-1.png)
@@ -20,6 +26,6 @@ docker run -v $(pwd):/mydirectory qr-gen-app
 ![alt text](submission_images/qr_code_04.02.02.44.png)
 
 Note: Although I saved the qr codes to a separate folder, I included the specific one I made from this build here.
-Also, had to alter the commands a bit because it was saying that my 
+Also, as you can tell, I modified my specific environment variables so the qr code would be magenta.
 
 
